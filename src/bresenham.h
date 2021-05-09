@@ -19,7 +19,7 @@
 #define Y_START 50        /* y-coordinate of starting point */
 #define X_END 351         /* x-coordinate of ending point */
 #define Y_END 350         /* x-coordinate of ending point */
-#define LINE_THICKNESS 5  /* line thickness measured in pixels */
+#define LINE_THICKNESS 8  /* line thickness measured in pixels */
 
 /******************************************************************************
  * displayFnc:      Clears display-window and calls line3 fuction             *

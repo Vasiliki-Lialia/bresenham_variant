@@ -5,7 +5,7 @@
  *                  and their descriptions regarding the implementation       *
  *                  of a modified bresenham algorithm in the first octant     *
  *                  and with a thickness line attribute at pixel level        *
- *                  againt the minor axis                                     *
+ *                  against the minor axis                                    *
  ******************************************************************************/
 
 #ifndef BRESENHAM_H
@@ -19,7 +19,7 @@
 #define Y_START 50        /* y-coordinate of starting point */
 #define X_END 351         /* x-coordinate of ending point */
 #define Y_END 350         /* x-coordinate of ending point */
-#define LINE_THICKNESS 8  /* line thickness measured in pixels */
+#define LINE_THICKNESS 5  /* line thickness measured in pixels */
 
 /******************************************************************************
  * displayFnc:      Clears display-window and calls line3 fuction             *
@@ -28,9 +28,10 @@ void displayFnc(void);
 
 /******************************************************************************
  * line3:           Draws line according to Bresenham                         *
- *                  line-drawingprocedure at first octant                     *
+ *                  line-drawing procedure at first octant                    *
  *                  with line thickness attribute "thickness"                 *
  *                  at pixel level against the minor axis                     *
+ *                  by calling function thicken                               *
  ******************************************************************************/
 void line3(const int xs, const int ys, const int xe, const int ye,
            const int thickness);
@@ -78,7 +79,7 @@ void parallel_y(const int xs, const int ys, const int xe, const int ye,
 
 /******************************************************************************
  * draw_odd_y:      Draws alternate parallel lines to given points            *
- *                  against the y-axis by calling line3 function function     *
+ *                  against the y-axis by calling line3 function              *
  *                  and thus achieves as thicker line                         *
  *                  as specified by an odd thickness parameter                *
  ******************************************************************************/
@@ -87,7 +88,7 @@ void draw_odd_y(const int xs, const int ys, const int xe, const int ye,
 
 /******************************************************************************
  * draw_even_y:     Draws alternate parallel lines to given points            *
- *                  against the y-axis by calling line3 function function     *
+ *                  against the y-axis by calling line3 function              *
  *                  and thus achieves as thicker line                         *
  *                  as specified by an even thickness parameter               *
  ******************************************************************************/
@@ -106,7 +107,7 @@ void parallel_x(const int xs, const int ys, const int xe, const int ye,
 
 /******************************************************************************
  * draw_odd_x:      Draws alternate parallel lines to given points            *
- *                  against the x-axis by calling line3 function function     *
+ *                  against the x-axis by calling line3 function              *
  *                  and thus achieves as thicker line                         *
  *                  as specified by an odd thickness parameter                *
  ******************************************************************************/
@@ -115,7 +116,7 @@ void draw_odd_x(const int xs, const int ys, const int xe, const int ye,
 
 /******************************************************************************
  * draw_even_x:     Draws alternate parallel lines to given points            *
- *                  against the x-axis by calling line3 function function     *
+ *                  against the x-axis by calling line3 function              *
  *                  and thus achieves as thicker line                         *
  *                  as specified by an even thickness parameter               *
  ******************************************************************************/

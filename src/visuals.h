@@ -12,10 +12,10 @@
 #include "visuals.h"
 #include "bresenham.h"
 
-#define WIN_THICKNESS 400 /* Initial display-window thickness */
-#define WIN_HEIGHT 400    /* Initial display-window height */
-#define INIT_WINDOW_X_POS 1
-#define INIT_WINDOW_Y_POS 1
+#define WIN_THICKNESS 400     /* Initial display-window thickness */
+#define WIN_HEIGHT 400        /* Initial display-window height */
+#define INIT_WINDOW_X_POS 1   /* Initial window x position from the top left */
+#define INIT_WINDOW_Y_POS 1   /* Initial window y position from the top left */
 
 /******************************************************************************
  * init:              Initiliazes display-window color, projection parameters *
